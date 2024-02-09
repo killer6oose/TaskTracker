@@ -1,0 +1,12 @@
+D:\Program Files\VisualStudios Projects\TaskTracker\bin\Debug\TaskTracker.exe.config
+D:\Program Files\VisualStudios Projects\TaskTracker\bin\Debug\TaskTracker.exe
+D:\Program Files\VisualStudios Projects\TaskTracker\bin\Debug\TaskTracker.pdb
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.csproj.AssemblyReference.cache
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.Form1.resources
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.Properties.Resources.resources
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.csproj.GenerateResource.cache
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.csproj.CoreCompileInputs.cache
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.exe
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.pdb
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\Interop.OneNoteEx.dll
+D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.csproj.ResolveComReference.cache
