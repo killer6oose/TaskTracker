@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PrjSelectLabel = new System.Windows.Forms.Label();
             this.StartTimer = new System.Windows.Forms.Button();
@@ -37,20 +38,24 @@
             this.NewPrj = new System.Windows.Forms.Button();
             this.Records = new System.Windows.Forms.RichTextBox();
             this.AdditionalNotesLabel = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewSourceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ViewSourceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BrowseProjectTextFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HelpTip = new System.Windows.Forms.HelpProvider();
+            this.BrowseDirectoryTip = new System.Windows.Forms.ToolTip(this.components);
+            this.TimezoneTip = new System.Windows.Forms.ToolTip(this.components);
+            this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // PrjSelectLabel
             // 
             this.PrjSelectLabel.AutoSize = true;
-            this.PrjSelectLabel.Location = new System.Drawing.Point(13, 27);
-            this.PrjSelectLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PrjSelectLabel.Location = new System.Drawing.Point(24, 59);
+            this.PrjSelectLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PrjSelectLabel.Name = "PrjSelectLabel";
-            this.PrjSelectLabel.Size = new System.Drawing.Size(100, 13);
+            this.PrjSelectLabel.Size = new System.Drawing.Size(181, 25);
             this.PrjSelectLabel.TabIndex = 1;
             this.PrjSelectLabel.Text = "Select a project file:";
             // 
@@ -59,10 +64,10 @@
             this.StartTimer.AutoSize = true;
             this.StartTimer.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.StartTimer.Font = new System.Drawing.Font("Impact", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartTimer.Location = new System.Drawing.Point(115, 93);
-            this.StartTimer.Margin = new System.Windows.Forms.Padding(2);
+            this.StartTimer.Location = new System.Drawing.Point(211, 172);
+            this.StartTimer.Margin = new System.Windows.Forms.Padding(4);
             this.StartTimer.Name = "StartTimer";
-            this.StartTimer.Size = new System.Drawing.Size(220, 63);
+            this.StartTimer.Size = new System.Drawing.Size(403, 116);
             this.StartTimer.TabIndex = 2;
             this.StartTimer.UseVisualStyleBackColor = true;
             this.StartTimer.Click += new System.EventHandler(this.StartTimer_Click);
@@ -70,40 +75,42 @@
             // Timezones
             // 
             this.Timezones.FormattingEnabled = true;
-            this.Timezones.Location = new System.Drawing.Point(115, 58);
-            this.Timezones.Margin = new System.Windows.Forms.Padding(2);
+            this.Timezones.Location = new System.Drawing.Point(211, 107);
+            this.Timezones.Margin = new System.Windows.Forms.Padding(4);
             this.Timezones.Name = "Timezones";
-            this.Timezones.Size = new System.Drawing.Size(220, 21);
+            this.Timezones.Size = new System.Drawing.Size(403, 32);
             this.Timezones.TabIndex = 3;
             this.Timezones.Text = "(UTC-05:00) Eastern Time (US & Canada)";
+            this.TimezoneTip.SetToolTip(this.Timezones, "This adjusts the timer to display in the local time\r\nwhen you actually started an" +
+        "d ended in the text doc.");
             this.Timezones.SelectedIndexChanged += new System.EventHandler(this.TimeZoneField_SelectedIndexChanged);
             // 
             // TimeZoneLabel
             // 
             this.TimeZoneLabel.AutoSize = true;
-            this.TimeZoneLabel.Location = new System.Drawing.Point(29, 61);
-            this.TimeZoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TimeZoneLabel.Location = new System.Drawing.Point(53, 113);
+            this.TimeZoneLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TimeZoneLabel.Name = "TimeZoneLabel";
-            this.TimeZoneLabel.Size = new System.Drawing.Size(85, 13);
+            this.TimeZoneLabel.Size = new System.Drawing.Size(157, 25);
             this.TimeZoneLabel.TabIndex = 4;
             this.TimeZoneLabel.Text = "Local Timezone:";
             // 
             // ProjectDropdown
             // 
             this.ProjectDropdown.FormattingEnabled = true;
-            this.ProjectDropdown.Location = new System.Drawing.Point(115, 23);
-            this.ProjectDropdown.Margin = new System.Windows.Forms.Padding(2);
+            this.ProjectDropdown.Location = new System.Drawing.Point(211, 55);
+            this.ProjectDropdown.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectDropdown.Name = "ProjectDropdown";
-            this.ProjectDropdown.Size = new System.Drawing.Size(220, 21);
+            this.ProjectDropdown.Size = new System.Drawing.Size(403, 32);
             this.ProjectDropdown.TabIndex = 7;
             this.ProjectDropdown.SelectedIndexChanged += new System.EventHandler(this.ProjectDropdown_SelectedIndexChanged);
             // 
             // NewPrj
             // 
-            this.NewPrj.Location = new System.Drawing.Point(342, 22);
-            this.NewPrj.Margin = new System.Windows.Forms.Padding(2);
+            this.NewPrj.Location = new System.Drawing.Point(627, 51);
+            this.NewPrj.Margin = new System.Windows.Forms.Padding(4);
             this.NewPrj.Name = "NewPrj";
-            this.NewPrj.Size = new System.Drawing.Size(58, 22);
+            this.NewPrj.Size = new System.Drawing.Size(106, 41);
             this.NewPrj.TabIndex = 10;
             this.NewPrj.Text = "NEW";
             this.NewPrj.UseVisualStyleBackColor = true;
@@ -111,63 +118,86 @@
             // 
             // Records
             // 
-            this.Records.Location = new System.Drawing.Point(16, 175);
-            this.Records.Margin = new System.Windows.Forms.Padding(2);
+            this.Records.Location = new System.Drawing.Point(29, 323);
+            this.Records.Margin = new System.Windows.Forms.Padding(4);
             this.Records.Name = "Records";
             this.Records.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.Records.Size = new System.Drawing.Size(384, 105);
+            this.Records.Size = new System.Drawing.Size(701, 190);
             this.Records.TabIndex = 9;
             this.Records.Text = "";
             // 
             // AdditionalNotesLabel
             // 
             this.AdditionalNotesLabel.AutoSize = true;
-            this.AdditionalNotesLabel.Location = new System.Drawing.Point(13, 160);
+            this.AdditionalNotesLabel.Location = new System.Drawing.Point(24, 295);
+            this.AdditionalNotesLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.AdditionalNotesLabel.Name = "AdditionalNotesLabel";
-            this.AdditionalNotesLabel.Size = new System.Drawing.Size(35, 13);
+            this.AdditionalNotesLabel.Size = new System.Drawing.Size(63, 25);
             this.AdditionalNotesLabel.TabIndex = 11;
             this.AdditionalNotesLabel.Text = "Notes";
             this.AdditionalNotesLabel.Click += new System.EventHandler(this.AdditionalNotesLabel_Click);
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(426, 24);
-            this.menuStrip1.TabIndex = 12;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            this.MenuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.MenuStrip.ImageScalingSize = new System.Drawing.Size(28, 28);
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.HelpToolStripMenuItem,
+            this.BrowseProjectTextFilesToolStripMenuItem});
+            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.MenuStrip.Name = "MenuStrip";
+            this.MenuStrip.Padding = new System.Windows.Forms.Padding(11, 4, 0, 4);
+            this.MenuStrip.Size = new System.Drawing.Size(781, 42);
+            this.MenuStrip.TabIndex = 12;
+            this.MenuStrip.Text = "MenuStrip";
+            this.BrowseDirectoryTip.SetToolTip(this.MenuStrip, "Browses the directory on your local machine where the projects being tracked are." +
+        "\r\n\r\n\r\n");
+            this.MenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStrip1_ItemClicked);
             // 
-            // helpToolStripMenuItem
+            // HelpToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.viewSourceToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AboutToolStripMenuItem,
+            this.ViewSourceToolStripMenuItem});
+            this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
+            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(74, 34);
+            this.HelpToolStripMenuItem.Text = "Help";
             // 
-            // aboutToolStripMenuItem
+            // AboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.AboutToolStripMenuItem.Text = "About";
+            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
-            // viewSourceToolStripMenuItem
+            // ViewSourceToolStripMenuItem
             // 
-            this.viewSourceToolStripMenuItem.Name = "viewSourceToolStripMenuItem";
-            this.viewSourceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.viewSourceToolStripMenuItem.Text = "View Source";
-            this.viewSourceToolStripMenuItem.Click += new System.EventHandler(this.viewSourceToolStripMenuItem_Click);
+            this.ViewSourceToolStripMenuItem.Name = "ViewSourceToolStripMenuItem";
+            this.ViewSourceToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.ViewSourceToolStripMenuItem.Text = "View Source";
+            this.ViewSourceToolStripMenuItem.Click += new System.EventHandler(this.ViewSourceToolStripMenuItem_Click);
+            // 
+            // BrowseProjectTextFilesToolStripMenuItem
+            // 
+            this.BrowseProjectTextFilesToolStripMenuItem.Name = "BrowseProjectTextFilesToolStripMenuItem";
+            this.BrowseProjectTextFilesToolStripMenuItem.Size = new System.Drawing.Size(213, 34);
+            this.BrowseProjectTextFilesToolStripMenuItem.Text = "Browse Project Files";
+            this.BrowseProjectTextFilesToolStripMenuItem.Click += new System.EventHandler(this.BrowseProjectTextFilesToolStripMenuItem_Click);
+            // 
+            // BrowseDirectoryTip
+            // 
+            this.BrowseDirectoryTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.BrowseDirectoryTip.ToolTipTitle = "Click to browse the directory containing all project files.";
+            // 
+            // TimezoneTip
+            // 
+            this.TimezoneTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 297);
+            this.ClientSize = new System.Drawing.Size(781, 548);
             this.Controls.Add(this.AdditionalNotesLabel);
             this.Controls.Add(this.NewPrj);
             this.Controls.Add(this.Records);
@@ -176,15 +206,15 @@
             this.Controls.Add(this.Timezones);
             this.Controls.Add(this.StartTimer);
             this.Controls.Add(this.PrjSelectLabel);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MenuStrip);
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Track Yo Shtuff";
+            this.Text = "Track Your Time";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,10 +229,14 @@
         private System.Windows.Forms.Button NewPrj;
         private System.Windows.Forms.RichTextBox Records;
         private System.Windows.Forms.Label AdditionalNotesLabel;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewSourceToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip MenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ViewSourceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem BrowseProjectTextFilesToolStripMenuItem;
+        private System.Windows.Forms.HelpProvider HelpTip;
+        private System.Windows.Forms.ToolTip BrowseDirectoryTip;
+        private System.Windows.Forms.ToolTip TimezoneTip;
     }
 }
 

@@ -10,3 +10,20 @@ D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.exe
 D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.pdb
 D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\Interop.OneNoteEx.dll
 D:\Program Files\VisualStudios Projects\TaskTracker\obj\Debug\TaskTracker.csproj.ResolveComReference.cache
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\bin\Debug\TaskTracker.exe.config
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\bin\Debug\TaskTracker.exe
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\bin\Debug\TaskTracker.pdb
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.csproj.AssemblyReference.cache
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\Interop.OneNoteEx.dll
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.csproj.ResolveComReference.cache
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.Form1.resources
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.Properties.Resources.resources
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.csproj.GenerateResource.cache
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.csproj.CoreCompileInputs.cache
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.exe
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.pdb
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\bin\Debug\TaskTracker.exe.manifest
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\bin\Debug\TaskTracker.application
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.TrustInfo.xml
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.exe.manifest
+C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Debug\TaskTracker.application
