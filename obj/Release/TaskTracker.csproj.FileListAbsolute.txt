@@ -16,3 +16,15 @@ C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Release\TaskTracker.exe.
 C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Release\TaskTracker.application
 C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Release\TaskTracker.exe
 C:\Users\Goose\Source\Repos\killer6oose\TaskTracker\obj\Release\TaskTracker.pdb
+C:\Users\Goose\Source\Repos\TaskTracker\obj\Release\TaskTracker.csproj.AssemblyReference.cache
+C:\Users\Goose\Source\Repos\TaskTracker\obj\Release\TaskTracker.exe
+C:\Users\Goose\Source\Repos\TaskTracker\obj\Release\TaskTracker.pdb
+C:\Users\Goose\Source\Repos\TaskTracker\bin\Release\TaskTracker.exe.config
+C:\Users\Goose\Source\Repos\TaskTracker\bin\Release\TaskTracker.xml
+C:\Users\Goose\Source\Repos\TaskTracker\bin\Release\TaskTracker.exe
+C:\Users\Goose\Source\Repos\TaskTracker\bin\Release\TaskTracker.pdb
+C:\Users\Goose\Source\Repos\TaskTracker\obj\Release\TaskTracker.csproj.ResolveComReference.cache
+C:\Users\Goose\Source\Repos\TaskTracker\obj\Release\TaskTracker.Form1.resources
+C:\Users\Goose\Source\Repos\TaskTracker\obj\Release\TaskTracker.Properties.Resources.resources
+C:\Users\Goose\Source\Repos\TaskTracker\obj\Release\TaskTracker.csproj.GenerateResource.cache
+C:\Users\Goose\Source\Repos\TaskTracker\obj\Release\TaskTracker.csproj.CoreCompileInputs.cache
