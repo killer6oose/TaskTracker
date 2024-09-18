@@ -43,6 +43,7 @@
             this.dbUserLabel = new System.Windows.Forms.Label();
             this.dbAddressLabel = new System.Windows.Forms.Label();
             this.dbAddress = new System.Windows.Forms.TextBox();
+            this.startWAMP = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.DatabaseOptions.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             // DatabaseOptions
             // 
+            this.DatabaseOptions.Controls.Add(this.startWAMP);
             this.DatabaseOptions.Controls.Add(this.dbDetailsSave);
             this.DatabaseOptions.Controls.Add(this.dbNameLabel);
             this.DatabaseOptions.Controls.Add(this.dbName);
@@ -85,7 +87,7 @@
             // 
             this.dbDetailsSave.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.dbDetailsSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.dbDetailsSave.Location = new System.Drawing.Point(237, 208);
+            this.dbDetailsSave.Location = new System.Drawing.Point(122, 203);
             this.dbDetailsSave.Name = "dbDetailsSave";
             this.dbDetailsSave.Size = new System.Drawing.Size(153, 29);
             this.dbDetailsSave.TabIndex = 5;
@@ -113,7 +115,7 @@
             // 
             this.dbConnect.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.dbConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.dbConnect.Location = new System.Drawing.Point(354, 256);
+            this.dbConnect.Location = new System.Drawing.Point(354, 203);
             this.dbConnect.Name = "dbConnect";
             this.dbConnect.Size = new System.Drawing.Size(153, 29);
             this.dbConnect.TabIndex = 7;
@@ -125,7 +127,7 @@
             // 
             this.testDBConn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.testDBConn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.testDBConn.Location = new System.Drawing.Point(122, 256);
+            this.testDBConn.Location = new System.Drawing.Point(122, 253);
             this.testDBConn.Name = "testDBConn";
             this.testDBConn.Size = new System.Drawing.Size(153, 29);
             this.testDBConn.TabIndex = 6;
@@ -199,6 +201,18 @@
             this.dbAddress.Size = new System.Drawing.Size(270, 22);
             this.dbAddress.TabIndex = 0;
             // 
+            // startWAMP
+            // 
+            this.startWAMP.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.startWAMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.startWAMP.Location = new System.Drawing.Point(354, 253);
+            this.startWAMP.Name = "startWAMP";
+            this.startWAMP.Size = new System.Drawing.Size(153, 29);
+            this.startWAMP.TabIndex = 14;
+            this.startWAMP.Text = "Start WAMP";
+            this.startWAMP.UseVisualStyleBackColor = false;
+            this.startWAMP.Click += new System.EventHandler(this.startWAMP_Click);
+            // 
             // PropertiesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -231,5 +245,6 @@
         private System.Windows.Forms.Button dbDetailsSave;
         private System.Windows.Forms.Label dbNameLabel;
         private System.Windows.Forms.TextBox dbName;
+        private System.Windows.Forms.Button startWAMP;
     }
 }

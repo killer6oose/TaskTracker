@@ -160,21 +160,21 @@
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.AboutToolStripMenuItem.Text = "About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // ViewSourceToolStripMenuItem
             // 
             this.ViewSourceToolStripMenuItem.Name = "ViewSourceToolStripMenuItem";
-            this.ViewSourceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ViewSourceToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.ViewSourceToolStripMenuItem.Text = "View Source";
             this.ViewSourceToolStripMenuItem.Click += new System.EventHandler(this.ViewSourceToolStripMenuItem_Click);
             // 
             // propertiesToolStripMenuItem
             // 
             this.propertiesToolStripMenuItem.Name = "propertiesToolStripMenuItem";
-            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.propertiesToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.propertiesToolStripMenuItem.Text = "Tracker Properties";
             this.propertiesToolStripMenuItem.Click += new System.EventHandler(this.propertiesToolStripMenuItem_Click);
             // 
@@ -211,7 +211,7 @@
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TaskTrackerForm";
-            this.Text = "Track Your Time";
+            this.Text = "Track Your Tasks";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuStrip.ResumeLayout(false);
             this.MenuStrip.PerformLayout();
