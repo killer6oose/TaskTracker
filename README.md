@@ -2,6 +2,11 @@
 
 TaskTracker is a user-friendly time management tool for tracking tasks, recording time spent, and organizing projects efficiently.
 
+## How to Use
+1. Download the latest release from the [Releases](https://github.com/killer6oose/TaskTracker/releases) section of the GitHub repository.
+2. Extract the downloaded zip file to a location on your local machine.
+3. Double-click the TaskTracker.exe file to launch the application.
+
 ## Features
 
 - Track tasks and record time spent
