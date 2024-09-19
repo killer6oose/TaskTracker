@@ -4,18 +4,35 @@
         <name>TaskTracker</name>
     </assembly>
     <members>
-        <member name="F:TaskTracker.Form1.components">
+        <member name="F:TaskTracker.TaskTrackerForm.components">
             <summary>
             Required designer variable.
             </summary>
         </member>
-        <member name="M:TaskTracker.Form1.Dispose(System.Boolean)">
+        <member name="M:TaskTracker.TaskTrackerForm.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:TaskTracker.Form1.InitializeComponent">
+        <member name="M:TaskTracker.TaskTrackerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:TaskTracker.forms.PropertiesWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TaskTracker.forms.PropertiesWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TaskTracker.forms.PropertiesWindow.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
