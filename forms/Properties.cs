@@ -231,38 +231,6 @@ namespace TaskTracker.forms
             return Guid.NewGuid().ToString("N");  // Generates a 32-character UUID without dashes
         }
 
-        private void startWAMP_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Construct the path to the .bat file
-                string batchFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "CTECH", "WAMP", "wamp.bat");
-
-                // Ensure the batch file exists before trying to run it
-                if (File.Exists(batchFilePath))
-                {
-                    // Create a new process to start the batch file
-                    ProcessStartInfo processInfo = new ProcessStartInfo
-                    {
-                        FileName = batchFilePath,  // Set the batch file path
-                        UseShellExecute = true,    // To run it as an external process
-                        CreateNoWindow = true      // Optional: Whether to show the console window
-                    };
-
-                    // Start the process
-                    Process.Start(processInfo);
-                    MessageBox.Show("WAMP started successfully.");
-                }
-                else
-                {
-                    MessageBox.Show("WAMP batch file not found.");
-                }
-            }
-            catch (Exception ex)
-            {
-                // Handle any errors that occur during process start
-                MessageBox.Show($"An error occurred while starting WAMP: {ex.Message}");
-            }
-        }
+        
     }
 }

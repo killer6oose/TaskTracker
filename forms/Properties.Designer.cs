@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabView = new System.Windows.Forms.TabControl();
             this.DatabaseOptions = new System.Windows.Forms.TabPage();
             this.dbDetailsSave = new System.Windows.Forms.Button();
             this.dbNameLabel = new System.Windows.Forms.Label();
@@ -43,25 +43,23 @@
             this.dbUserLabel = new System.Windows.Forms.Label();
             this.dbAddressLabel = new System.Windows.Forms.Label();
             this.dbAddress = new System.Windows.Forms.TextBox();
-            this.startWAMP = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
+            this.tabView.SuspendLayout();
             this.DatabaseOptions.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabView
             // 
-            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
-            this.tabControl1.Controls.Add(this.DatabaseOptions);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(767, 426);
-            this.tabControl1.TabIndex = 0;
+            this.tabView.Appearance = System.Windows.Forms.TabAppearance.Buttons;
+            this.tabView.Controls.Add(this.DatabaseOptions);
+            this.tabView.Location = new System.Drawing.Point(12, 12);
+            this.tabView.Multiline = true;
+            this.tabView.Name = "tabView";
+            this.tabView.SelectedIndex = 0;
+            this.tabView.Size = new System.Drawing.Size(767, 426);
+            this.tabView.TabIndex = 0;
             // 
             // DatabaseOptions
             // 
-            this.DatabaseOptions.Controls.Add(this.startWAMP);
             this.DatabaseOptions.Controls.Add(this.dbDetailsSave);
             this.DatabaseOptions.Controls.Add(this.dbNameLabel);
             this.DatabaseOptions.Controls.Add(this.dbName);
@@ -201,27 +199,15 @@
             this.dbAddress.Size = new System.Drawing.Size(270, 22);
             this.dbAddress.TabIndex = 0;
             // 
-            // startWAMP
-            // 
-            this.startWAMP.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.startWAMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.startWAMP.Location = new System.Drawing.Point(354, 253);
-            this.startWAMP.Name = "startWAMP";
-            this.startWAMP.Size = new System.Drawing.Size(153, 29);
-            this.startWAMP.TabIndex = 14;
-            this.startWAMP.Text = "Start WAMP";
-            this.startWAMP.UseVisualStyleBackColor = false;
-            this.startWAMP.Click += new System.EventHandler(this.startWAMP_Click);
-            // 
             // PropertiesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabView);
             this.Name = "PropertiesWindow";
             this.Text = "PropertiesWindow";
-            this.tabControl1.ResumeLayout(false);
+            this.tabView.ResumeLayout(false);
             this.DatabaseOptions.ResumeLayout(false);
             this.DatabaseOptions.PerformLayout();
             this.ResumeLayout(false);
@@ -230,7 +216,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabView;
         private System.Windows.Forms.TabPage DatabaseOptions;
         private System.Windows.Forms.TextBox dbAddress;
         private System.Windows.Forms.Label dbPortLabel;
@@ -245,6 +231,5 @@
         private System.Windows.Forms.Button dbDetailsSave;
         private System.Windows.Forms.Label dbNameLabel;
         private System.Windows.Forms.TextBox dbName;
-        private System.Windows.Forms.Button startWAMP;
     }
 }

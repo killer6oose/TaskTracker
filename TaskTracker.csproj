@@ -196,13 +196,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="wampServer\.gitignore" />
-    <None Include="wampServer\dist\config.php" />
-    <None Include="wampServer\dist\index.php" />
-    <None Include="wampServer\dist\WAMPx64.zip" />
-    <None Include="wampServer\dist\WAMPx86.zip" />
-    <None Include="wampServer\README.md" />
-    <None Include="wampServer\wamp.bat" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -212,7 +205,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8-kill-time-96.ico" />
-    <Content Include="wampServer\dist\unzip.exe" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
