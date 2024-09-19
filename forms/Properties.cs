@@ -12,7 +12,7 @@ namespace TaskTracker.forms
     public partial class PropertiesWindow : Form
     {
         // Configuration Variables
-        private string encryptionKey = "hxcrlYe6RIEX4Ep0MmiOqjHff955nSeR"; // Replace with a secure encryption key
+        private string encryptionKey = "hxcrlYe6RIEX4Ep0MmiOqjHff955nSeR"; // Replace with a new secure encryption key
         private string configFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "TaskTracker", "dbConfig.txt");
         private MySqlConnection dbConnection;
         private MySqlConnection connection;
